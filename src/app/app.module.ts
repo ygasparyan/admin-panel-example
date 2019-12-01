@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import {ChartsModule} from './charts/charts.module';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {ResourcesModule} from './resources/resources.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    ChartsModule,
+    ResourcesModule,
     DashboardModule,
-    ResourcesModule
+    BrowserModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
