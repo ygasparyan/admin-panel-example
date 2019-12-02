@@ -1,0 +1,15 @@
+.main-container {
+  display: flex;
+}
+.sidebar-container {
+  flex-grow: 1;
+  padding-left: 25px;
+}
+.content-container {
+  flex: 5;
+  padding-bottom: 25px;
+}
+
+app-sidebar {
+  position: fixed;
+}
