@@ -7,6 +7,7 @@ import {ChartsModule} from './charts/charts.module';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {ResourcesModule} from './resources/resources.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     ResourcesModule,
     DashboardModule,
     BrowserModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
