@@ -1,1 +1,13 @@
-<p>charts works!</p>
+<h1>Charts</h1>
+<ngx-charts-bar-vertical
+  [view]="view"
+  [results]="data"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis">
+</ngx-charts-bar-vertical>
+<ngx-charts-pie-chart
+  [view]="view"
+  [results]="data"
+  [legend]="showLegend"
+  [labels]="showLabels">
+</ngx-charts-pie-chart>
