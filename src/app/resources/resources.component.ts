@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ResourcesService } from '../services';
+import { Observable } from 'rxjs';
+import { ResourcesModel } from '../models';
 
 @Component({
   selector: 'app-resources',
@@ -6,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resources.component.scss']
 })
 export class ResourcesComponent implements OnInit {
-
-  constructor() { }
+  public resources$: Observable<ResourcesModel> = this.resourcesService.getResources();
+  public displayedColumns: Array<string> = ['id', 'name', 'year', 'color', 'pantone_value'];
+  constructor(
+    private resourcesService: ResourcesService
+  ) { }
 
   ngOnInit() {
   }
